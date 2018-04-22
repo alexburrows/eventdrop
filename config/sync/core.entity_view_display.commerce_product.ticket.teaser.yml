@@ -1,0 +1,45 @@
+uuid: 4b23e60b-ab99-42fd-bc32-916d43f617a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.ticket
+    - core.entity_view_mode.commerce_product.teaser
+    - field.field.commerce_product.ticket.body
+    - field.field.commerce_product.ticket.stores
+    - field.field.commerce_product.ticket.variations
+  module:
+    - commerce_product
+    - text
+id: commerce_product.ticket.teaser
+targetEntityType: commerce_product
+bundle: ticket
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: -4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true

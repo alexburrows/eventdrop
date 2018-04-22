@@ -1,0 +1,10 @@
+uuid: 516e1aa3-31eb-4ab1-9beb-a6ae980d1990
+langcode: en
+status: true
+dependencies: {  }
+id: administrator
+label: Administrator
+weight: 2
+is_admin: null
+permissions:
+  - 'display eu cookie compliance popup'

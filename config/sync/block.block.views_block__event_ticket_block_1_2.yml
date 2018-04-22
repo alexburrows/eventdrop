@@ -1,0 +1,24 @@
+uuid: 078377f3-7b8f-4aaa-bf66-5c2a31a8b4ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_ticket
+  module:
+    - views
+  theme:
+    - bulma
+id: views_block__event_ticket_block_1_2
+theme: bulma
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:event_ticket-block_1'
+settings:
+  id: 'views_block:event_ticket-block_1'
+  label: 'Other Events'
+  provider: views
+  label_display: visible
+  views_label: 'Other Events'
+  items_per_page: none
+visibility: {  }

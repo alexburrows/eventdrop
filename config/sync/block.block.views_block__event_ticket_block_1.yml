@@ -1,0 +1,30 @@
+uuid: 6320c172-03ca-4919-9e0d-3cbfc98de3a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_ticket
+  module:
+    - system
+    - views
+  theme:
+    - adminimal_theme
+id: views_block__event_ticket_block_1
+theme: adminimal_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:event_ticket-block_1'
+settings:
+  id: 'views_block:event_ticket-block_1'
+  label: 'Available Event Tickets'
+  provider: views
+  label_display: visible
+  views_label: 'Available Event Tickets'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

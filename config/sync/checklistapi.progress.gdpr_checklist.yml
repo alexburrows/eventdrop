@@ -1,0 +1,53 @@
+progress:
+  '#changed': 1524439047
+  '#changed_by': '1'
+  '#completed_items': 16
+  '#items':
+    responsability_agreement:
+      '#completed': 1524439047
+      '#uid': '1'
+    recommended_resources:
+      '#completed': 1524439047
+      '#uid': '1'
+    data1:
+      '#completed': 1524439047
+      '#uid': '1'
+    privacy_policy_page:
+      '#completed': 1524439047
+      '#uid': '1'
+    privacy_policy_published:
+      '#completed': 1524439047
+      '#uid': '1'
+    privacy_policy_in_menu:
+      '#completed': 1524439047
+      '#uid': '1'
+    external_traffic_measurement:
+      '#completed': 1524439047
+      '#uid': '1'
+    social_media_connections:
+      '#completed': 1524439047
+      '#uid': '1'
+    module_data_collection:
+      '#completed': 1524439047
+      '#uid': '1'
+    user_role_permissions:
+      '#completed': 1524439047
+      '#uid': '1'
+    cancel_account:
+      '#completed': 1524439047
+      '#uid': '1'
+    delete_data:
+      '#completed': 1524439047
+      '#uid': '1'
+    legal_adviser_consulted:
+      '#completed': 1524439047
+      '#uid': '1'
+    gdpr_modules:
+      '#completed': 1524439047
+      '#uid': '1'
+    notice_upon_breach:
+      '#completed': 1524439047
+      '#uid': '1'
+    logging_responsability:
+      '#completed': 1524439047
+      '#uid': '1'

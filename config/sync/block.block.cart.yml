@@ -1,0 +1,21 @@
+uuid: 0c206574-ecb6-4d76-9adb-cbe91d9e12ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - bulma
+id: cart
+theme: bulma
+region: sidebar_second
+weight: -4
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: visible
+  dropdown: false
+visibility: {  }
