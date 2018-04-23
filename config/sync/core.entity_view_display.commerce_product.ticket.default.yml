@@ -5,11 +5,21 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.ticket
     - field.field.commerce_product.ticket.body
+    - field.field.commerce_product.ticket.field_event_date
+    - field.field.commerce_product.ticket.field_event_location
     - field.field.commerce_product.ticket.stores
     - field.field.commerce_product.ticket.variations
   module:
     - commerce_product
+    - datetime
+    - field_layout
+    - layout_discovery
+    - leaflet
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: commerce_product.ticket.default
 targetEntityType: commerce_product
 bundle: ticket
@@ -21,6 +31,45 @@ content:
     weight: -4
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_event_date:
+    weight: 11
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_event_location:
+    weight: 12
+    label: above
+    settings:
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      zoom: 10
+      minPossibleZoom: 0
+      maxPossibleZoom: 18
+      minZoom: 0
+      maxZoom: 18
+      popup: false
+      icon:
+        icon_url: ''
+        shadow_url: ''
+        icon_size:
+          x: 0
+          'y': 0
+        icon_anchor:
+          x: 0
+          'y': 0
+        shadow_anchor:
+          x: 0
+          'y': 0
+        popup_anchor:
+          x: 0
+          'y': 0
+    third_party_settings: {  }
+    type: leaflet_formatter_default
     region: content
   title:
     label: hidden

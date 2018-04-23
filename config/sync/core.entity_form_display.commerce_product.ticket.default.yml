@@ -5,13 +5,23 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.ticket
     - field.field.commerce_product.ticket.body
+    - field.field.commerce_product.ticket.field_event_date
+    - field.field.commerce_product.ticket.field_event_location
     - field.field.commerce_product.ticket.stores
     - field.field.commerce_product.ticket.variations
   module:
     - commerce
+    - datetime
+    - field_layout
+    - geofield
     - inline_entity_form
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: commerce_product.ticket.default
 targetEntityType: commerce_product
 bundle: ticket
@@ -32,6 +42,19 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_event_date:
+    weight: 91
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_event_location:
+    weight: 92
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
+    region: content
   path:
     type: path
     weight: 30

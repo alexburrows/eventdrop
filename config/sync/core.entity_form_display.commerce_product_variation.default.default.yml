@@ -6,6 +6,12 @@ dependencies:
     - commerce_product.commerce_product_variation_type.default
   module:
     - commerce_price
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: tPYXAFcoBHG1jtgfl021t-ns7EE7da_S-o2zfS7aLUQ
 id: commerce_product_variation.default.default

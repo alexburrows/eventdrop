@@ -6,6 +6,12 @@ dependencies:
     - commerce_store.commerce_store_type.online
   module:
     - address
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: aOjgfb6yMxeaSWFwXTCknWVCT0JD6vYcflAXlczbBEI
 id: commerce_store.online.default

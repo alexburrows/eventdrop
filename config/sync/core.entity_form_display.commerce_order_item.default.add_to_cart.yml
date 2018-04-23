@@ -11,6 +11,12 @@ dependencies:
       - commerce_product
   module:
     - commerce_product
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: dEAP3rR9rAW6OwN2i5jskLxvkOBHsclejItF8RL_KVQ
 id: commerce_order_item.default.add_to_cart
