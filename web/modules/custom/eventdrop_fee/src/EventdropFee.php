@@ -5,7 +5,6 @@ namespace Drupal\eventdrop_fee;
 use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\commerce_order\OrderProcessorInterface;
 use Drupal\commerce_price\Price;
-use Drupal\commerce_product\Entity\Product;
 use Drupal\commerce_order\Adjustment;
 
 /**
@@ -20,10 +19,10 @@ class EventdropFee implements OrderProcessorInterface {
   public function process(OrderInterface $order)  {
     foreach ($order->getItems() as $order_item) {
       $order_item->setAdjustments([]);
-      // Apply custom adjustment.
+      // @todo: add config to allow ui amends.
       $adjustments[] = new Adjustment([
         'type' => 'eventdrop_fee',
-        'label' => 'Eventdrop Fee',
+        'label' => t('Eventdrop Fee'),
         'amount' => new Price('0.50', 'GBP'),
       ]);
       $order_item->setAdjustments($adjustments);
