@@ -1,0 +1,32 @@
+uuid: d39e53e1-0bea-4144-a078-77a1df25d48f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.ticket_details
+  module:
+    - commerce_price
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: commerce_product_variation.ticket_details.default
+targetEntityType: commerce_product_variation
+bundle: ticket_details
+mode: default
+content:
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      strip_trailing_zeroes: false
+      display_currency_code: false
+    third_party_settings: {  }
+hidden:
+  product_id: true
+  sku: true
+  title: true

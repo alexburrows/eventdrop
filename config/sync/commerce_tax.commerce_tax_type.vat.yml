@@ -1,0 +1,19 @@
+uuid: 790fdcf3-9ceb-4fc7-b3f6-fee04d2b7ea1
+langcode: en
+status: true
+dependencies: {  }
+id: vat
+label: VAT
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 9c10f545-e396-4ed7-8656-2e0ec2272c3c
+      label: VAT
+      percentage: '0.2'
+  territories:
+    -
+      country_code: GB
+  display_inclusive: true

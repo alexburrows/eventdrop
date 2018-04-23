@@ -1,0 +1,20 @@
+uuid: 65d7689d-c517-4f3c-9363-45f8fbee94fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - geofield
+id: commerce_product.field_event_location
+field_name: field_event_location
+entity_type: commerce_product
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

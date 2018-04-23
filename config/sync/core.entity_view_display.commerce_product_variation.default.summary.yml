@@ -8,6 +8,13 @@ dependencies:
   enforced:
     module:
       - commerce_checkout
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: FZNRP3e--QCbG69eQ4ekdrlzlfpBHRYCuAkM5QStgSQ
 id: commerce_product_variation.default.summary

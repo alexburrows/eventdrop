@@ -1,9 +1,10 @@
-uuid: 71685c7c-fb64-4b7a-93af-42d6599a4c31
+uuid: df3e8cc7-9fca-43ff-91ae-41f1c4b7848b
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.ticket
+    - core.entity_view_mode.commerce_product.price_and_action
     - field.field.commerce_product.ticket.body
     - field.field.commerce_product.ticket.field_event_date
     - field.field.commerce_product.ticket.field_event_location
@@ -17,12 +18,12 @@ dependencies:
     - text
 third_party_settings:
   field_layout:
-    id: layout_twocol
+    id: layout_onecol
     settings: {  }
-id: commerce_product.ticket.default
+id: commerce_product.ticket.price_and_action
 targetEntityType: commerce_product
 bundle: ticket
-mode: default
+mode: price_and_action
 content:
   body:
     label: hidden
@@ -30,7 +31,7 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
-    region: first
+    region: content
   field_event_date:
     weight: 0
     label: above
@@ -39,7 +40,7 @@ content:
       format_type: long
     third_party_settings: {  }
     type: datetime_default
-    region: top
+    region: content
   field_event_location:
     weight: 3
     label: hidden
@@ -69,14 +70,14 @@ content:
           'y': 0
     third_party_settings: {  }
     type: leaflet_formatter_default
-    region: second
+    region: content
   variations:
     type: entity_reference_entity_view
     weight: 1
-    region: top
+    region: content
     label: hidden
     settings:
-      view_mode: default
+      view_mode: cart
       link: false
     third_party_settings: {  }
 hidden:

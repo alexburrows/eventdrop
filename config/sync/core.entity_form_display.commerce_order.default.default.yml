@@ -7,7 +7,13 @@ dependencies:
     - field.field.commerce_order.default.order_items
   module:
     - commerce_order
+    - field_layout
     - inline_entity_form
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: 1NKrIQBqELStd0cyiuHeNArhuPvOZj36faDEG1dWqEA
 id: commerce_order.default.default
@@ -27,6 +33,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  cart:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 20
+    region: content
+    third_party_settings: {  }
   order_items:
     type: inline_entity_form_complex
     weight: 1

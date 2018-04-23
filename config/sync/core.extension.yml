@@ -30,13 +30,18 @@ module:
   entity: 0
   entity_reference_revisions: 0
   eu_cookie_compliance: 0
+  eventdrop_fee: 0
   field: 0
+  field_layout: 0
   field_ui: 0
   file: 0
   filter: 0
   gdpr: 0
   gdpr_dump: 0
+  geofield: 0
   inline_entity_form: 0
+  layout_discovery: 0
+  leaflet: 0
   link: 0
   menu_ui: 0
   node: 0

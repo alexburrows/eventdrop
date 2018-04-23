@@ -9,7 +9,13 @@ dependencies:
   module:
     - commerce_order
     - entity_reference_revisions
+    - field_layout
+    - layout_discovery
     - options
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 _core:
   default_config_hash: UcQydNwgf9NMjqKyyPwC9mJu-QmHqV7HKOcIp0VuV7w
 id: commerce_order.default.user

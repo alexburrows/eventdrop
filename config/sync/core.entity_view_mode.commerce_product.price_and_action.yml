@@ -1,0 +1,10 @@
+uuid: 7c29da04-da81-45a5-bb3f-b1af6a305202
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.price_and_action
+label: 'Price and action'
+targetEntityType: commerce_product
+cache: true
