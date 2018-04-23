@@ -3,4 +3,3 @@ services:
      class: '\Drupal\eventdrop_fee\EventdropFee'
      tags:
        - { name: commerce_order.order_processor, priority: 300 }
-       
