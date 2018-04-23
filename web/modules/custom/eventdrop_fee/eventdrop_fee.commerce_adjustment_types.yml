@@ -1,0 +1,4 @@
+eventdrop_fee:
+ label: Eventdrop fee
+ has_ui: true
+ weight: 0

@@ -1,0 +1,5 @@
+name: Fee
+description: Add handling fee to all orders
+type: module
+core: 8.x
+package: Eventdrop
