@@ -1,0 +1,22 @@
+uuid: 7c83ba65-ce49-4bb4-a88e-fcf01efc1226
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.ticket
+    - field.storage.commerce_product.field_event_location
+  module:
+    - geofield
+id: commerce_product.ticket.field_event_location
+field_name: field_event_location
+entity_type: commerce_product
+bundle: ticket
+label: 'Event Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

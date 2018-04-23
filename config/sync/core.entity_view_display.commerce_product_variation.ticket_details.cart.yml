@@ -1,37 +1,33 @@
-uuid: 2e1e9fb6-c9de-4a4c-917a-70abbaf7b895
+uuid: 184491da-9526-4a38-b621-5507417efeb0
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_variation_type.default
+    - commerce_product.commerce_product_variation_type.ticket_details
     - core.entity_view_mode.commerce_product_variation.cart
-  enforced:
-    module:
-      - commerce_cart
-      - commerce_product
   module:
+    - commerce_price
     - field_layout
     - layout_discovery
 third_party_settings:
   field_layout:
     id: layout_onecol
     settings: {  }
-_core:
-  default_config_hash: EVn6BiYwtiYYiS-9vG5bvZDkkX9hQq1SgIqeQ_iPC-I
-id: commerce_product_variation.default.cart
+id: commerce_product_variation.ticket_details.cart
 targetEntityType: commerce_product_variation
-bundle: default
+bundle: ticket_details
 mode: cart
 content:
-  product_id:
-    type: entity_reference_label
+  price:
+    type: commerce_price_default
     weight: 0
+    region: content
     label: hidden
     settings:
-      link: true
+      strip_trailing_zeroes: false
+      display_currency_code: false
     third_party_settings: {  }
-    region: content
 hidden:
-  price: true
+  product_id: true
   sku: true
   title: true

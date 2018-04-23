@@ -6,11 +6,19 @@ dependencies:
     - commerce_product.commerce_product_type.ticket
     - core.entity_view_mode.commerce_product.teaser
     - field.field.commerce_product.ticket.body
+    - field.field.commerce_product.ticket.field_event_date
+    - field.field.commerce_product.ticket.field_event_location
     - field.field.commerce_product.ticket.stores
     - field.field.commerce_product.ticket.variations
   module:
     - commerce_product
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
 id: commerce_product.ticket.teaser
 targetEntityType: commerce_product
 bundle: ticket
@@ -41,5 +49,7 @@ content:
     region: content
 hidden:
   created: true
+  field_event_date: true
+  field_event_location: true
   stores: true
   uid: true
